@@ -65,15 +65,20 @@ data(survey)
 
 library('MASS')
 data(survey)
-?survey # read the description of the dataset
+?survey 
+head(survey)
+# read the description of the dataset
 # The objective of your task is to compare the heights for men and women in this sample.
 # First, find the mode of the height for men and the mode of the height for women.
 # Write your code here:
+
+male_height<- survey$Heigh[survey$sex==Male]
 
 
 # Second, produce histograms for the height of men and for the height of women.
 # Make sure the scale on the x-axis is the same for both histograms.
 # Write your code here:
+
 
 
 # This is the end of Task 3
